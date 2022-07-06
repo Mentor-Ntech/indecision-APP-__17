@@ -1,0 +1,29 @@
+@import './setting';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: $darkblue;
+    font-size: $large-size;
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}

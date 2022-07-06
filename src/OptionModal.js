@@ -20,12 +20,14 @@ const OptionModal = (props) => {
     return (<Modal
         isOpen={!!props.selectedOption}
         contentLabel='open modal'
+        closeTimeoutMS={200}
+        className ="modal"
     
     >
         
-        <button onClick={props.closeModal}>okay</button>
-        
-        {props.selectedOption && <h2>{props.selectedOption}</h2> }
+        {props.selectedOption && <h2 className="modal__text">{props.selectedOption}</h2> }
+
+        <button onClick={props.closeModal} className="buttonSmall">close</button>
         
     </Modal>)
     

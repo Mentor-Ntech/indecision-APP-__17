@@ -22,10 +22,14 @@ class AddOptions extends React.Component {
     }
     render() {
         return (<div>
-            <form onSubmit={this.handleAddOptions}>
-            <input type="text" name="options" />
-            <button>Add option</button>
-            </form>
+
+                <div>
+                <form onSubmit={this.handleAddOptions} className="addOption">
+                    <input type="text" name="options" className="addOption--input"/>
+                    <button className="buttonSmall">Add option</button>
+                </form>
+                </div>
+            
 
         </div>)
     }

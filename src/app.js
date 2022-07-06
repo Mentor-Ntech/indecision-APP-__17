@@ -16,11 +16,13 @@
 // const myEmail = validator.isEmail('oloyedeaderayo11@gmail.com')
 // console.log(myEmail)
 
+
 import React from "react";
 import ReactDOM  from "react-dom";
 
 import IndecisionApp from "./components/IndecisionApp";
-import './css/style.css'
+import './css/style.scss'
+import 'normalize.css/normalize.css';
 
 const Layout = (props) => {
     return (<div>
@@ -28,7 +30,10 @@ const Layout = (props) => {
 
         {props.children}
         <p>footer</p>
+
+        
     </div>)
+
 
 }
 

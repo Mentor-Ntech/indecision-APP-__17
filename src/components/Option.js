@@ -2,8 +2,13 @@ import React from "react";
 
 const Option = (props) => {
     return (<div>
-           available Option <p>{props.OptionText}</p>
-           <button onClick={(e) =>{props.handleRemoveItem(props.OptionText)}}>Remove</button>
+                <div className="option">
+                    <p className="optionResult">{props.count}. {props.OptionText}</p>
+                    
+             <button onClick={(e) =>{props.handleRemoveItem(props.OptionText)}} className="buttonSmall buttonSmall--link">Remove</button>
+                </div>
+
+            
     </div>)
 
 }

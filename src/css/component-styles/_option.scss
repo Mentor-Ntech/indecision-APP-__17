@@ -1,0 +1,10 @@
+.option {
+    display: flex;
+    justify-content: space-between;
+    padding: $large-size $medium-size;
+    border-bottom: 1px solid lighten($lightBlue, 10);
+}
+.optionResult {
+    color: $white;
+    word-break: break-all;
+}

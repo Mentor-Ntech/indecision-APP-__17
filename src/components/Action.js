@@ -10,9 +10,13 @@ import React from "react"
 //     }
 // }
 
+
 const Action =(props) => {
     return (<div>
-            <button onClick={props.handlePick} disabled={!props.hasOption}>What should i do...</button>
+                <div>
+                <button className="buttonBig" onClick={props.handlePick} disabled={!props.hasOption}>What should i do?</button>
+
+                </div>
         </div>)
 }
 export default Action;
